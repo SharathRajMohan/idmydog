@@ -1,0 +1,16 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>DOG BREED CLASSIFICATION</h1>
+    <form  action="imgupload/imageprocess" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input id="image"type="file" name="image"/>
+    <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
